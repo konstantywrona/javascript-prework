@@ -25,6 +25,7 @@ body {
   position: absolute;
   margin: 0 auto;
   height: 500px;
+  max-width: 600px;
   padding: 0 20px;
   left: 50%;
   top: 50%;
@@ -47,6 +48,7 @@ body {
   top: 0;
   left: 0;
   transform: rotate(10deg);
+  z-index: -1;
 }
 
 .introduction {
