@@ -1,105 +1,105 @@
 /* Variables */
 
-$font-text: 'Stick No Bills', sans-serif;
+$font-text: "Stick No Bills", sans-serif;
 
 /* Global */
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: $font-text;
-    font-size: 1.25rem;
-    line-height: 1.7;
-    text-align: center;
-    background: #4b6584;
+  margin: 0;
+  font-family: $font-text;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  text-align: center;
+  background: #4b6584;
 }
 
 /* Container */
 
 .container {
-    position: absolute;
-    margin: 0 auto;
-    height: 500px;
-    padding: 0 20px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px solid #2d98da;
-    background-color: #2d98da;
-    border-radius: 40px;
-    z-index: 1;
+  position: absolute;
+  margin: 0 auto;
+  height: 500px;
+  padding: 0 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #2d98da;
+  background-color: #2d98da;
+  border-radius: 40px;
+  z-index: 1;
 }
 
 .container::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    border: 2px solid #20bf6b;
-    background-color: #3867d6;
-    border-radius: 40px;
-    opacity: 0.3;
-    top: 0;
-    left: 0;
-    transform: rotate(10deg);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 2px solid #20bf6b;
+  background-color: #3867d6;
+  border-radius: 40px;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  transform: rotate(10deg);
 }
 
 .introduction {
-    margin-top: 30px;
-    padding: 10px;
+  margin-top: 30px;
+  padding: 10px;
 
-    h1 {
-        font-size: 3rem;
-    }
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 .button-row {
-    width: 100%;
-    padding: 20px;
+  width: 100%;
+  padding: 20px;
 
-    i {
-        font-size: 100px;
-    }
+  i {
+    font-size: 100px;
+  }
 
-    i:hover {
-        transform: scale(1.1);
-    }
+  i:hover {
+    transform: scale(1.1);
+  }
 }
 
 .btn {
-    font-size: 0;
-    outline: none;
+  font-size: 0;
+  outline: none;
 }
 
 /* RWD for smaller devices */
 
 @media (max-width: 767px) {
-    .container {
-        width: 80%
-    }
+  .container {
+    width: 80%;
+  }
 
-    .introduction {
-        h1 {
-            font-size: 2rem;
-        }
+  .introduction {
+    h1 {
+      font-size: 2rem;
     }
+  }
 
-    .button-row {
-        i {
-            font-size: 40px;
-        }
+  .button-row {
+    i {
+      font-size: 40px;
     }
+  }
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
-    .button-row {
-        i {
-            font-size: 60px;
-        }
+  .button-row {
+    i {
+      font-size: 60px;
     }
+  }
 }
